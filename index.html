@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vive La Vida · Bar de tostas y tapas en Los Molinos</title>
+<meta name="description" content="Vive La Vida, bar en Los Molinos (C/ Taberna 5): tostas a 6 € eligiendo dos ingredientes, ensaladilla, albóndigas, canapés y pan sin gluten. Aperitivo, tardeo y copas. Jueves de tapas.">
+<meta property="og:title" content="Vive La Vida · Bar de tostas y tapas en Los Molinos">
+<meta property="og:description" content="Tostas a 6 € con dos ingredientes a elegir, ensaladilla, albóndigas y pan sin gluten. C/ Taberna 5, Los Molinos.">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R04ZaucAcOWsob_vDRyVxuoadhKGcZA5ftRcRWnvVkF30Ddh2suyAK--UIsT_ojYHYBtkBM_Bra3Z1kcCreYEtdDP32mjzHZKKsCxLiAX0eeqT7Ffcj7aCmYxPBcuiUC9BOu0K72SANiQ=w1200-h630-k-no">
+<meta name="theme-color" content="#1d2433">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--night:#1d2433;--night2:#283149;--cream:#fbf5ec;--cream2:#f3e8d8;--card:#fffdf8;--ink:#22201d;--muted:#6f675e;--line:#e8dccb;--coral:#e2553b;--coral-d:#c2412a;--sun:#f4b740;--chalk:#f4f0e8;--wa:#1faa59;--fs:'Yellowtail',cursive;--fc:'Caveat',cursive;--fh:'Fraunces',Georgia,serif;--fb:'Figtree',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:70px;-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+section{padding:86px 0;position:relative}
+h1,h2,h3{font-family:var(--fh);font-weight:700;line-height:1.05;letter-spacing:-.015em}
+.kicker{display:inline-block;font-family:var(--fc);font-weight:700;font-size:1.55rem;color:var(--coral);line-height:1;margin-bottom:8px;transform:rotate(-2deg)}
+.sec-title{font-size:clamp(2.2rem,5.6vw,3.5rem);margin-bottom:12px}
+.sec-sub{color:var(--muted);max-width:600px;margin-bottom:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:transform .15s,background .2s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 12px 28px -12px var(--wa)}
+.btn-wa:hover{background:#178f4a}
+.btn-coral{background:var(--coral);color:#fff}
+.btn-coral:hover{background:var(--coral-d)}
+.btn-line{border-color:currentColor;background:transparent}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:60;background:rgba(29,36,51,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--chalk)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.brand{text-decoration:none;line-height:1;display:flex;flex-direction:column}
+.brand b{font-family:var(--fs);font-weight:400;font-size:2rem;line-height:.9;color:#fff}
+.brand small{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,240,232,.65);font-weight:700;margin-top:3px}
+.links{display:flex;align-items:center;gap:24px;list-style:none}
+.links a{text-decoration:none;font-weight:600;font-size:.95rem}
+.links a:hover{color:var(--sun)}
+.links .cta{background:var(--wa);color:#fff;padding:10px 16px;border-radius:999px;display:inline-flex;gap:8px;align-items:center}
+.links .cta:hover{color:#fff;background:#178f4a}
+.links .cta svg{width:18px;height:18px}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid rgba(255,255,255,.5);background:transparent;cursor:pointer;flex:none}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;margin:auto;position:relative;transition:transform .25s,background .25s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* HERO */
+.hero{padding:0;color:#fff;min-height:min(88vh,760px);display:flex;align-items:flex-end;overflow:hidden;background:var(--night)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,36,51,.15) 0%,rgba(29,36,51,.35) 40%,rgba(29,36,51,.92) 100%)}
+.hero .wrap{position:relative;padding-bottom:56px;padding-top:120px;width:100%}
+.status{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:999px;font-size:.85rem;font-weight:700;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(6px);margin-bottom:18px}
+.status i{width:9px;height:9px;border-radius:50%;background:#bbb}
+.status.open i{background:#35d07a;animation:pulse 2s infinite}
+.status.closed i{background:var(--coral)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(53,208,122,.6)}70%{box-shadow:0 0 0 10px rgba(53,208,122,0)}100%{box-shadow:0 0 0 0 rgba(53,208,122,0)}}
+.hero h1{font-family:var(--fs);font-weight:400;font-size:clamp(4.4rem,15vw,9rem);line-height:.85;letter-spacing:0;text-shadow:0 6px 30px rgba(0,0,0,.35)}
+.hero .tag{font-family:var(--fc);font-weight:700;font-size:clamp(1.6rem,4vw,2.2rem);color:var(--sun);margin:8px 0 10px;transform:rotate(-1.5deg);display:inline-block}
+.hero .lede{font-size:1.12rem;max-width:560px;color:rgba(255,255,255,.88);margin-bottom:26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-line{color:#fff}
+.rate{display:flex;align-items:center;gap:10px;margin-top:24px;font-size:.92rem;color:rgba(255,255,255,.85);flex-wrap:wrap}
+.rate b{color:#fff;font-size:1.1rem}
+.stars{color:var(--sun);letter-spacing:2px}
+.g-logo{width:20px;height:20px;flex:none;background:#fff;border-radius:50%;padding:2px}
+
+/* STRIP */
+.strip{background:var(--coral);color:#fff;overflow:hidden;white-space:nowrap;padding:0}
+.strip div{display:inline-block;padding:12px 0;font-family:var(--fc);font-weight:700;font-size:1.65rem;animation:tick 32s linear infinite}
+.strip span{margin:0 18px}
+.strip span::after{content:"✦";margin-left:36px;color:var(--sun);font-size:1.05rem}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* TOSTA BUILDER */
+.builder{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+.board{background:var(--night);color:var(--chalk);border-radius:12px;padding:30px clamp(18px,4vw,40px) 30px;border:12px solid #9a7148;box-shadow:inset 0 0 70px rgba(0,0,0,.45),0 30px 60px -30px rgba(34,32,29,.6);background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:6px 6px}
+.board-h{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px}
+.board-h h3{font-family:var(--fc);font-weight:700;font-size:2.3rem;line-height:1}
+.board-h .price{font-family:var(--fc);font-weight:700;font-size:3rem;line-height:.9;color:var(--sun);text-align:right}
+.board-h .price small{display:block;font-size:1.15rem;color:rgba(244,240,232,.75)}
+.ings{display:flex;flex-wrap:wrap;gap:8px}
+.ing{font-family:var(--fc);font-weight:700;font-size:1.35rem;line-height:1;padding:8px 13px 9px;border-radius:999px;border:1.5px dashed rgba(244,240,232,.35);background:transparent;color:var(--chalk);cursor:pointer;transition:background .15s,border-color .15s,transform .15s}
+.ing:hover{border-color:var(--sun)}
+.ing.on{background:var(--sun);border:1.5px solid var(--sun);color:var(--night);transform:rotate(-2deg)}
+.ing:disabled{opacity:.35;cursor:not-allowed}
+.board-foot{margin-top:18px;font-family:var(--fc);font-size:1.4rem;color:var(--sun)}
+.plate{position:sticky;top:90px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 20px 40px -28px rgba(34,32,29,.5)}
+.toast{position:relative;height:140px;margin:6px 0 16px}
+.bread{position:absolute;left:6%;right:6%;bottom:12px;height:64px;border-radius:26px 30px 22px 28px;background:linear-gradient(180deg,#e5b16a,#c98a41);box-shadow:inset 0 -8px 0 rgba(0,0,0,.08),0 14px 20px -12px rgba(0,0,0,.35);transition:filter .3s}
+.bread.gf{filter:hue-rotate(-12deg) saturate(.7) brightness(1.05)}
+.bread::after{content:"";position:absolute;inset:8px 12px 18px;border-radius:20px;background:#f2d39c;opacity:.6}
+.topping{position:absolute;bottom:58px;height:46px;border-radius:24px;display:grid;place-items:center;font-family:var(--fc);font-weight:700;font-size:1.25rem;color:#fff;padding:0 12px;white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.3);animation:drop .35s cubic-bezier(.3,1.6,.6,1)}
+.topping.t1{left:9%;width:42%;background:var(--coral);transform:rotate(-3deg)}
+.topping.t2{right:9%;width:42%;background:#4b8a5c;transform:rotate(3deg)}
+@keyframes drop{from{transform:translateY(-40px);opacity:0}}
+.plate h4{font-family:var(--fh);font-size:1.4rem;margin-bottom:4px}
+.plate .sum{color:var(--muted);font-size:.95rem;min-height:3em}
+.gf-row{display:flex;align-items:center;gap:10px;margin:14px 0;font-weight:600;font-size:.95rem;cursor:pointer}
+.gf-row input{width:20px;height:20px;accent-color:var(--coral)}
+.plate .btn{width:100%}
+.plate .btn[aria-disabled="true"]{opacity:.45;pointer-events:none;box-shadow:none}
+.plate .reset{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:.88rem;margin-top:10px;display:block;margin-inline:auto}
+
+/* FAVORITOS */
+.sec-fav{background:var(--cream2)}
+.favs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fav{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.fav .ph{aspect-ratio:1;overflow:hidden;background:var(--line)}
+.fav .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.fav:hover .ph img{transform:scale(1.05)}
+.fav .tx{padding:16px 18px 20px}
+.fav h3{font-size:1.35rem;margin-bottom:4px}
+.fav p{color:var(--muted);font-size:.93rem;line-height:1.45}
+.fav q{display:block;margin-top:10px;font-family:var(--fc);font-weight:700;font-size:1.25rem;color:var(--coral);line-height:1.15;quotes:"“" "”"}
+.fav .icon{aspect-ratio:1;display:grid;place-items:center;background:var(--night);color:var(--sun);font-family:var(--fs);font-size:4.4rem}
+
+/* PLAN */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.plan{border-radius:22px;padding:26px 24px;color:#fff;position:relative;overflow:hidden;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end}
+.plan h3{font-family:var(--fs);font-weight:400;font-size:2.9rem;line-height:1}
+.plan p{opacity:.9;font-size:.98rem}
+.plan .when{position:absolute;top:18px;left:22px;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;background:rgba(255,255,255,.2);padding:5px 10px;border-radius:999px}
+.p-a{background:linear-gradient(135deg,#f4b740,#e2553b)}
+.p-b{background:linear-gradient(135deg,#e2553b,#9d2f5c)}
+.p-c{background:linear-gradient(135deg,#3a3f8f,#1d2433)}
+.thu{margin-top:18px;display:flex;align-items:center;gap:18px;background:var(--night);color:var(--chalk);border-radius:22px;padding:20px 24px;flex-wrap:wrap}
+.thu b{font-family:var(--fs);font-weight:400;font-size:2.4rem;color:var(--sun);line-height:1}
+.thu p{flex:1;min-width:220px;color:rgba(244,240,232,.85)}
+
+/* DUEÑAS */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.duo-ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.duo-ph img{border-radius:20px;width:100%;height:340px;object-fit:cover}
+.duo-ph img:nth-child(2){margin-top:44px}
+.duo blockquote{font-family:var(--fh);font-size:1.45rem;line-height:1.35;border-left:4px solid var(--coral);padding-left:18px;margin:22px 0}
+.duo cite{display:block;font-family:var(--fb);font-style:normal;font-size:.9rem;color:var(--muted);margin-top:8px}
+
+/* GALERÍA */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:10px}
+.gal button{border:0;padding:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:var(--cream2)}
+.gal button:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gal button:nth-child(5){grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal button:hover img{transform:scale(1.05)}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(18,20,28,.94);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:84vh;max-width:100%;border-radius:12px}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:1.5rem;cursor:pointer}
+.lb .x{top:16px;right:16px}.lb .pv{left:12px;top:50%}.lb .nx{right:12px;top:50%}
+
+/* RESEÑAS */
+.sec-rev{background:var(--night);color:var(--chalk)}
+.sec-rev .kicker{color:var(--sun)}
+.sec-rev .sec-sub{color:rgba(244,240,232,.7)}
+.rv-head{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:20px}
+.rv-score{display:flex;align-items:center;gap:14px}
+.rv-score b{font-family:var(--fh);font-size:3.4rem;line-height:1}
+.rv-score small{display:block;color:rgba(244,240,232,.65)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:8px 14px;border-radius:999px;border:1.5px solid rgba(255,255,255,.22);background:transparent;color:var(--chalk);font-weight:600;font-size:.88rem;cursor:pointer}
+.chip.on{background:var(--sun);border-color:var(--sun);color:var(--night)}
+.rv-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px 2px 10px}
+.rv-track::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(340px,84%);scroll-snap-align:start;background:var(--night2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:22px}
+.rv.hide{display:none}
+.rv-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.rv-top strong{display:block}
+.rv-top small{color:rgba(244,240,232,.55)}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;flex:none}
+.rv .stars{display:block;margin-bottom:8px}
+.rv p{color:rgba(244,240,232,.9);font-size:.98rem}
+.rv-arrows{display:flex;gap:8px;margin-top:14px}
+.rv-arrows button{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:transparent;color:#fff;cursor:pointer;font-size:1.1rem}
+.rv-arrows a{margin-left:auto;align-self:center;color:var(--sun);font-weight:700;text-decoration:none;font-size:.92rem}
+
+/* INFO */
+.info{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px}
+.hours{list-style:none;margin-top:6px}
+.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-weight:500}
+.hours li:last-child{border:0}
+.hours li.today{color:var(--coral);font-weight:800}
+.hours li.off span:last-child{color:var(--muted)}
+.addr{display:flex;flex-direction:column;gap:14px}
+.addr .row{display:flex;gap:12px;align-items:flex-start}
+.addr .ic{flex:none;width:38px;height:38px;border-radius:12px;background:var(--cream2);display:grid;place-items:center;font-size:1.1rem}
+.addr small{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);height:240px;margin-top:6px}
+.map iframe{width:100%;height:100%;border:0}
+
+/* CTA */
+.cta-band{background:var(--coral);color:#fff;text-align:center;padding:70px 0}
+.cta-band h2{font-family:var(--fs);font-weight:400;font-size:clamp(3rem,9vw,5rem);line-height:1;margin-bottom:10px}
+.cta-band p{opacity:.92;margin-bottom:24px}
+.cta-band .btn-line{color:#fff}
+
+footer{background:var(--night);color:rgba(244,240,232,.7);padding:36px 0 96px;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer b{font-family:var(--fs);font-weight:400;font-size:1.8rem;color:#fff}
+footer a{color:var(--sun)}
+
+/* WA flotante */
+.fab{position:fixed;right:16px;bottom:16px;z-index:70;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);transition:transform .2s}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:30px;height:30px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:920px){
+  .burger{display:block}
+  .links{position:absolute;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--night);padding:6px 20px 18px;box-shadow:0 18px 30px -18px rgba(0,0,0,.6);display:none}
+  .links.open{display:flex}
+  .links li a{display:block;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.08);font-size:1.05rem}
+  .links .cta{justify-content:center;margin-top:12px;border:0}
+  .builder,.duo,.info{grid-template-columns:1fr}
+  .plate{position:static}
+  .favs{grid-template-columns:1fr 1fr}
+  .plans{grid-template-columns:1fr}
+  .plan{min-height:170px}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .gal button:nth-child(5){grid-row:span 1}
+  .duo-ph img{height:260px}
+}
+@media (max-width:520px){
+  section{padding:66px 0}
+  .ctas .btn{flex:1 1 100%}
+  .favs{grid-template-columns:1fr 1fr;gap:10px}
+  .fav .tx{padding:12px 13px 15px}
+  .fav h3{font-size:1.12rem}
+  .fav p{font-size:.85rem}
+  .fav q{font-size:1.1rem}
+  .ing{font-size:1.2rem;padding:7px 11px 8px}
+  .board{border-width:9px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><b>Vive La Vida</b><small>Los Molinos</small></a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <ul class="links" id="menu">
+      <li><a href="#tostas">Tostas</a></li>
+      <li><a href="#carta">Lo más pedido</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#fotos">Fotos</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#horario">Horario</a></li>
+      <li><a class="cta" href="https://wa.me/34620201106?text=Hola%20Vive%20La%20Vida!%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Escríbenos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="hero-bg"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R04ZaucAcOWsob_vDRyVxuoadhKGcZA5ftRcRWnvVkF30Ddh2suyAK--UIsT_ojYHYBtkBM_Bra3Z1kcCreYEtdDP32mjzHZKKsCxLiAX0eeqT7Ffcj7aCmYxPBcuiUC9BOu0K72SANiQ=w1600-h1200-k-no" alt="Fachada del bar Vive La Vida en la calle Taberna de Los Molinos" fetchpriority="high"></div>
+  <div class="wrap">
+    <span class="status" id="status"><i></i><span>Calculando horario…</span></span>
+    <h1>Vive La Vida</h1>
+    <span class="tag">Tostas, tapas y buen rollo en Los Molinos</span>
+    <p class="lede">Aperitivo, tardeo y copas en la calle Taberna. Tostas a 6 € con los dos ingredientes que tú elijas, ensaladilla, albóndigas caseras y pan sin gluten para quien lo necesite.</p>
+    <div class="ctas">
+      <a class="btn btn-wa" href="https://wa.me/34620201106?text=Hola%20Vive%20La%20Vida!%20Quer%C3%ADa%20reservar%20mesa%20para%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Reservar por WhatsApp</a>
+      <a class="btn btn-line" href="#tostas">Monta tu tosta</a>
+    </div>
+    <div class="rate"><svg class="g-logo" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2c-2 1.5-4.5 2.4-7.2 2.4-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><b>5,0</b><span class="stars">★★★★★</span><span>16 reseñas en Google</span></div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div><span>Tostas a 6 €</span><span>Elige dos ingredientes</span><span>Pan sin gluten</span><span>Jueves de tapas</span><span>Aperitivo · Tardeo · Copas</span><span>Ensaladilla de la casa</span><span>Albóndigas de 10</span><span>Tostas a 6 €</span><span>Elige dos ingredientes</span><span>Pan sin gluten</span><span>Jueves de tapas</span><span>Aperitivo · Tardeo · Copas</span><span>Ensaladilla de la casa</span><span>Albóndigas de 10</span></div></div>
+
+<section id="tostas">
+  <div class="wrap">
+    <span class="kicker">La estrella de la casa</span>
+    <h2 class="sec-title">Monta tu tosta</h2>
+    <p class="sec-sub">Así funciona nuestra pizarra: eliges dos ingredientes y te la preparamos al momento, por 6 €. Pruébalo aquí y, si te apetece, nos la pides por WhatsApp para tenerla lista.</p>
+    <div class="builder reveal">
+      <div class="board">
+        <div class="board-h"><h3>Elige dos<br>ingredientes</h3><div class="price">6€<small>la tosta</small></div></div>
+        <div class="ings" id="ings"></div>
+        <p class="board-foot">✦ Tenemos pan sin gluten</p>
+      </div>
+      <aside class="plate" aria-live="polite">
+        <div class="toast"><div class="bread" id="bread"></div><div id="tops"></div></div>
+        <h4 id="tname">Tu tosta</h4>
+        <p class="sum" id="tsum">Toca dos ingredientes de la pizarra para montarla.</p>
+        <label class="gf-row"><input type="checkbox" id="gf"> Con pan sin gluten</label>
+        <a class="btn btn-wa" id="tbtn" aria-disabled="true" href="#" target="_blank" rel="noopener">Pedirla por WhatsApp</a>
+        <button class="reset" id="treset" type="button">Empezar de nuevo</button>
+      </aside>
+    </div>
+    <p style="margin-top:14px;color:var(--muted);font-size:.88rem">También tenemos sándwich mixto. Los ingredientes pueden cambiar según el día: pregúntanos en la barra.</p>
+  </div>
+</section>
+
+<section id="carta" class="sec-fav">
+  <div class="wrap">
+    <span class="kicker">Lo que más se pide</span>
+    <h2 class="sec-title">Cocina casera, de picoteo</h2>
+    <p class="sec-sub">No lo decimos nosotras, lo dicen nuestros clientes en Google.</p>
+    <div class="favs">
+      <article class="fav reveal"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8_FvybEcTG6hoZOCHRfkMz2s9BjUTi1cWja9Y5suMJrAQZtiHtAIvpnSOc-HjBxi3E-8OXjxf16ZWF8ceP0C0FAj8T8tayBntwpZVnU5ASrxt4fRCtZ2cH187mqK9f7U8QjwO0i-gcdno=w600-h600-k-no" alt="Tosta de salmón ahumado"></div><div class="tx"><h3>Tostas</h3><p>Dos ingredientes a elegir de la pizarra. 6 €.</p><q>Buen trato y maravillosas tostas.</q></div></article>
+      <article class="fav reveal"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOKg16bVE6SWwa4Q5TeP-YprOVdn6h_ERsH2MYBLzZwd9jpS98HMDjS_zMgC-izBGsOB2ocv-zspUQJy4XZc_agXYnSXT0L5wf1ytrKzph9ptbFaA0IxmUvFt6gMjp8kyc-JtgEsvzYQvz=w600-h600-k-no" alt="Bandeja de ternera picada para las tostas"></div><div class="tx"><h3>Canapés</h3><p>Variados y hechos al momento, tú eliges.</p><q>Me quedé enamorada de los canapés.</q></div></article>
+      <article class="fav reveal"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R6Q6YZHLGVKOQxooQZxCw8g5wSpHT9QwVD691IOrOJZjf9cMEKJmSWF1AvJPwmChrrJKcfXNKiv2JoFQXqpckbcNgUa9nLdssR0p9n2kIK6mtjn8LFW29kZtQl_kiQYBZDjs2rOXAo56Yv=w600-h600-k-no" alt="Ensaladilla de la casa con pan"></div><div class="tx"><h3>Ensaladilla</h3><p>La famosa de la casa, para acompañar la caña.</p><q>Su famosa ensaladilla.</q></div></article>
+      <article class="fav reveal"><div class="icon">10</div><div class="tx"><h3>Albóndigas</h3><p>Caseras, de las que se piden otra vez.</p><q>Las albóndigas de 10.</q></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="planes">
+  <div class="wrap">
+    <span class="kicker">Da igual la hora</span>
+    <h2 class="sec-title">Un plan para cada momento</h2>
+    <p class="sec-sub">Buena música, buen ambiente y algo rico para picar, desde el mediodía hasta la última copa.</p>
+    <div class="plans">
+      <article class="plan p-a reveal"><span class="when">Mediodía</span><h3>Aperitivo</h3><p>Una caña o un vermut con una tosta recién hecha.</p></article>
+      <article class="plan p-b reveal"><span class="when">Tarde</span><h3>Tardeo</h3><p>Terraza, música y canapés para alargar la sobremesa.</p></article>
+      <article class="plan p-c reveal"><span class="when">Noche</span><h3>Copas</h3><p>Viernes y sábados abrimos hasta las 2.</p></article>
+    </div>
+    <div class="thu reveal"><b>Jueves de tapas</b><p>“No se puede faltar al jueves de tapas”, nos dicen. Los jueves abrimos a las 20:00: ven con hambre.</p><a class="btn btn-coral" href="https://wa.me/34620201106?text=Hola!%20%C2%BFTen%C3%A9is%20sitio%20para%20el%20jueves%20de%20tapas%3F" target="_blank" rel="noopener">Guardar sitio</a></div>
+  </div>
+</section>
+
+<section id="nosotras" class="sec-fav">
+  <div class="wrap duo">
+    <div class="duo-ph reveal">
+      <img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TTUGsyZj0bxnONbmxWd18O-s_1qefLZjTxuFKmTVKA9JWeKG3QhL1kYbc0aFMFEH-j9UfjwGTvFsOMVLpnmM4tjox-n4bMqR_IJ8muwl58qrLjcnPJ9ZxxjtnazEugDH9LIJPOYDkA1S8=w600-h800-k-no" alt="En la cocina de Vive La Vida">
+      <img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R5zNat9sZs2U_fawJUkUyUI2kipS2S48SNrCo_5sRfUlFCWX1dnfEYmc-bMdhbPZSNOfSN_8LTL8458JsL1J7irDf45OyYygn8jb8Tutl7wsd96b_C_BoLBA0HTTLMp_IlaLVOSG2nGak=w600-h800-k-no" alt="Sirviendo una tosta en la terraza">
+    </div>
+    <div class="reveal">
+      <span class="kicker">Quiénes somos</span>
+      <h2 class="sec-title">Ana y Belén</h2>
+      <p style="color:var(--muted)">Abrimos Vive La Vida en la calle Taberna con una idea sencilla: que quien entre se sienta como en casa. Cocina casera, pan sin gluten para quien lo necesite y una barra donde siempre hay buen ambiente.</p>
+      <blockquote>“Ana y Belén hacen que a Vive la Vida quieras volver siempre.”<cite>— Macu, en Google</cite></blockquote>
+      <a class="btn btn-coral" href="#horario">Ven a vernos</a>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="wrap">
+    <span class="kicker">Así se vive</span>
+    <h2 class="sec-title">Fotos</h2>
+    <p class="sec-sub">Toca cualquier foto para verla en grande.</p>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-label="Foto ampliada"><button class="x" aria-label="Cerrar">✕</button><button class="pv" aria-label="Anterior">‹</button><img alt=""><button class="nx" aria-label="Siguiente">›</button></div>
+
+<section id="resenas" class="sec-rev">
+  <div class="wrap">
+    <span class="kicker">Lo que dicen de nosotras</span>
+    <div class="rv-head">
+      <div class="rv-score"><b>5,0</b><div><span class="stars">★★★★★</span><small>16 reseñas en Google</small></div></div>
+      <div class="chips" id="chips"><button class="chip on" data-k="">Todas</button><button class="chip" data-k="tosta">Tostas</button><button class="chip" data-k="canap">Canapés</button><button class="chip" data-k="casa">Como en casa</button><button class="chip" data-k="ambiente">Ambiente</button></div>
+    </div>
+    <div class="rv-track" id="track"></div>
+    <div class="rv-arrows"><button id="rvp" aria-label="Anterior">←</button><button id="rvn" aria-label="Siguiente">→</button><a href="https://www.google.com/maps/search/?api=1&query=Vive+La+Vida+C.+Taberna+5+Los+Molinos" target="_blank" rel="noopener" id="gmaps">Ver todas en Google →</a></div>
+  </div>
+</section>
+
+<section id="horario">
+  <div class="wrap">
+    <span class="kicker">Te esperamos</span>
+    <h2 class="sec-title">Horario y cómo llegar</h2>
+    <div class="info">
+      <div class="card reveal">
+        <h3 style="font-size:1.5rem">Horario</h3>
+        <ul class="hours" id="hours"></ul>
+      </div>
+      <div class="card addr reveal">
+        <div class="row"><span class="ic">📍</span><div><small>Dirección</small>C/ Taberna, 5 · 28460 Los Molinos (Madrid)</div></div>
+        <div class="row"><span class="ic">💬</span><div><small>Reservas</small><a href="https://wa.me/34620201106" target="_blank" rel="noopener">620 20 11 06</a> · WhatsApp o llamada</div></div>
+        <div class="row"><span class="ic">🍞</span><div><small>Sin gluten</small>Tenemos pan sin gluten para las tostas</div></div>
+        <div class="map"><iframe loading="lazy" title="Mapa de Vive La Vida" src="https://maps.google.com/maps?q=40.715425,-4.0739421&z=17&output=embed"></iframe></div>
+        <a class="btn btn-coral" href="https://www.google.com/maps/dir/?api=1&destination=40.715425,-4.0739421" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>¿Nos vemos?</h2>
+    <p>Reserva tu mesa o pregúntanos lo que quieras por WhatsApp.</p>
+    <div class="ctas" style="justify-content:center">
+      <a class="btn btn-wa" href="https://wa.me/34620201106?text=Hola%20Vive%20La%20Vida!%20" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn-line" href="tel:+34620201106">Llamar</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Vive La Vida</b><br>C/ Taberna, 5 · Los Molinos · 620 20 11 06</div>
+    <div>Web hecha por <a href="https://lacedev.com" target="_blank" rel="noopener">Lace</a></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/34620201106?text=Hola%20Vive%20La%20Vida!%20" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+
+<script>
+const WA='34620201106';
+/* menú móvil */
+const bg=document.querySelector('.burger'),menu=document.getElementById('menu');
+bg.addEventListener('click',()=>{const o=menu.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');bg.setAttribute('aria-expanded','false')}));
+
+/* horario: [día 0=dom], tramos en minutos (fin > 24h = madrugada) */
+const H={4:[[1200,1440]],5:[[720,1560]],6:[[720,1560]],0:[[720,1440]]};
+const DN=['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+const fmt=m=>{m%=1440;return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')};
+function isOpen(d){const day=d.getDay(),mins=d.getHours()*60+d.getMinutes();
+  for(const [a,b] of (H[day]||[])) if(mins>=a&&mins<b) return {open:true,until:b};
+  const prev=(day+6)%7; for(const [a,b] of (H[prev]||[])) if(b>1440&&mins<b-1440) return {open:true,until:b};
+  return {open:false}}
+function nextOpen(d){for(let i=0;i<8;i++){const x=new Date(d);x.setDate(d.getDate()+i);const tr=H[x.getDay()];if(!tr)continue;for(const [a] of tr){if(i>0||a>d.getHours()*60+d.getMinutes()) return (i===0?'hoy':i===1?'mañana':DN[x.getDay()].toLowerCase())+' a las '+fmt(a)}}return ''}
+const now=new Date(),st=document.getElementById('status'),s=isOpen(now);
+st.classList.add(s.open?'open':'closed');
+st.querySelector('span').textContent=s.open?'Abierto ahora · hasta las '+fmt(s.until):'Cerrado · abrimos '+nextOpen(now);
+const hl=document.getElementById('hours');
+[1,2,3,4,5,6,0].forEach(d=>{const li=document.createElement('li');const tr=H[d];li.innerHTML='<span>'+DN[d]+'</span><span>'+(tr?tr.map(([a,b])=>fmt(a)+' – '+fmt(b)).join(', '):'Cerrado')+'</span>';if(!tr)li.classList.add('off');if(d===now.getDay())li.classList.add('today');hl.appendChild(li)});
+
+/* tostas */
+const ING=['Camembert','Queso azul','Queso crema','Havarti','Champiñón','Bacon','Ternera picada','Solomillo de cerdo','Salmón ahumado','Gulas','Gambas','Anchoa de Casa Santoña','Cangrejo','Atún','Sobrasada','Jamón serrano','Queso de cabra','Cebolla caramelizada','Chorizo','Boquerones en vinagre'];
+const box=document.getElementById('ings'),tops=document.getElementById('tops'),sum=document.getElementById('tsum'),nm=document.getElementById('tname'),btn=document.getElementById('tbtn'),gf=document.getElementById('gf'),bread=document.getElementById('bread');
+let sel=[];
+ING.forEach(n=>{const b=document.createElement('button');b.type='button';b.className='ing';b.textContent=n;b.setAttribute('aria-pressed','false');b.onclick=()=>toggle(n,b);box.appendChild(b)});
+function toggle(n,b){const i=sel.indexOf(n);if(i>-1)sel.splice(i,1);else if(sel.length<2)sel.push(n);render()}
+function render(){
+  box.querySelectorAll('.ing').forEach(b=>{const on=sel.includes(b.textContent);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.disabled=!on&&sel.length>=2});
+  tops.innerHTML=sel.map((n,i)=>'<div class="topping t'+(i+1)+'">'+n+'</div>').join('');
+  bread.classList.toggle('gf',gf.checked);
+  const pan=gf.checked?' con pan sin gluten':'';
+  if(sel.length===2){nm.textContent='Tosta de '+sel[0].toLowerCase()+' y '+sel[1].toLowerCase();sum.textContent='¡Buena elección! 6 €'+pan+'.';btn.setAttribute('aria-disabled','false');btn.href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hola Vive La Vida! Me apetece una tosta de '+sel[0].toLowerCase()+' y '+sel[1].toLowerCase()+pan+'. ¿Hoy estáis abiertos?')}
+  else{nm.textContent=sel.length?'Tosta de '+sel[0].toLowerCase()+' y…':'Tu tosta';sum.textContent=sel.length?'Elige un ingrediente más.':'Toca dos ingredientes de la pizarra para montarla.';btn.setAttribute('aria-disabled','true');btn.href='#'}
+}
+gf.onchange=render;document.getElementById('treset').onclick=()=>{sel=[];gf.checked=false;render()};render();
+
+/* galería */
+const P='https://lh3.googleusercontent.com/gps-cs-s/';
+const G=[
+ ['ANWiy9R04ZaucAcOWsob_vDRyVxuoadhKGcZA5ftRcRWnvVkF30Ddh2suyAK--UIsT_ojYHYBtkBM_Bra3Z1kcCreYEtdDP32mjzHZKKsCxLiAX0eeqT7Ffcj7aCmYxPBcuiUC9BOu0K72SANiQ','La fachada de Vive La Vida'],
+ ['ANWiy9Q8_FvybEcTG6hoZOCHRfkMz2s9BjUTi1cWja9Y5suMJrAQZtiHtAIvpnSOc-HjBxi3E-8OXjxf16ZWF8ceP0C0FAj8T8tayBntwpZVnU5ASrxt4fRCtZ2cH187mqK9f7U8QjwO0i-gcdno','Tosta de salmón'],
+ ['ANWiy9R6Q6YZHLGVKOQxooQZxCw8g5wSpHT9QwVD691IOrOJZjf9cMEKJmSWF1AvJPwmChrrJKcfXNKiv2JoFQXqpckbcNgUa9nLdssR0p9n2kIK6mtjn8LFW29kZtQl_kiQYBZDjs2rOXAo56Yv','Ensaladilla'],
+ ['ANWiy9TOKg16bVE6SWwa4Q5TeP-YprOVdn6h_ERsH2MYBLzZwd9jpS98HMDjS_zMgC-izBGsOB2ocv-zspUQJy4XZc_agXYnSXT0L5wf1ytrKzph9ptbFaA0IxmUvFt6gMjp8kyc-JtgEsvzYQvz','Ternera picada'],
+ ['ANWiy9SUY8ag5LxJLpfpFOxNavfw9re1hIg74BmL_lk-BUJZ8xdMt5Dgp3VVClKP9sp71TQzXb9XG2J9d-9ZGiCcuO9-Uxjb0lO4qn3m12wNrCBcFlWw21c51I5gD14befe_8d4IjLwVYVUCuhiB','Sirviendo en la calle Taberna'],
+ ['ANWiy9TTUGsyZj0bxnONbmxWd18O-s_1qefLZjTxuFKmTVKA9JWeKG3QhL1kYbc0aFMFEH-j9UfjwGTvFsOMVLpnmM4tjox-n4bMqR_IJ8muwl58qrLjcnPJ9ZxxjtnazEugDH9LIJPOYDkA1S8','En la cocina'],
+ ['ANWiy9R5zNat9sZs2U_fawJUkUyUI2kipS2S48SNrCo_5sRfUlFCWX1dnfEYmc-bMdhbPZSNOfSN_8LTL8458JsL1J7irDf45OyYygn8jb8Tutl7wsd96b_C_BoLBA0HTTLMp_IlaLVOSG2nGak','Tosta recién hecha'],
+ ['ANWiy9T5QCSrVSQdVEToPg5yr_XtAk_4D19CCOWMIgxhG2CJKDkF1uS46NmsYBsBXOToDu3WMaguDvPlBKxHyhQEjxJWXpE6Skf_5nvpxmkxEDnyh1_QySdY_2j-ME7iVeifddq8dE2AIuLfY-1G','Buen ambiente']
+];
+const gal=document.getElementById('gal');
+G.forEach(([id,alt],i)=>{const b=document.createElement('button');b.type='button';b.innerHTML='<img loading="lazy" src="'+P+id+'=w700-h700-k-no" alt="'+alt+'">';b.onclick=()=>openLb(i);gal.appendChild(b)});
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');let cur=0;
+function openLb(i){cur=i;lbi.src=P+G[i][0]+'=w1400-h1400-k-no';lbi.alt=G[i][1];lb.classList.add('on')}
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
+lb.querySelector('.pv').onclick=()=>openLb((cur+G.length-1)%G.length);
+lb.querySelector('.nx').onclick=()=>openLb((cur+1)%G.length);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')lb.querySelector('.pv').click();if(e.key==='ArrowRight')lb.querySelector('.nx').click()});
+
+/* reseñas (Google) */
+const R=[
+ ['María José Maldonado','hace 2 semanas','Un sitio donde da gusto estar. Las dueñas son un encanto, siempre te hacen sentir como en casa y te atienden con una gran sonrisa. Además, preparan unas tostas maravillosas con un delicioso pan sin gluten, algo que se agradece muchísimo.','tosta casa'],
+ ['Olga Salinas','hace 3 semanas','Un lugar con tanto encanto, donde comer es un placer porque todo está buenísimo: las albóndigas de 10, esos canapés espectaculares donde tú eliges ingredientes… Aperitivo, tardeo o nocheo, da igual a qué hora vayas porque el ambiente es buenísimo a todas horas con buena música.','canap ambiente'],
+ ['Macu Sánchez Molina','hace 3 semanas','Ana y Belén hacen que a Vive la Vida quieras volver siempre; si a eso le sumas su ensaladilla, las tostas, las albóndigas… que todo está espectacular, lo convierte en un sitio de referencia en Los Molinos.','tosta casa'],
+ ['Begoña Gómez','hace 3 semanas','¡Me encanta este sitio! La comida espectacular, el ambiente que se respira en el bar más que divertido y, en especial, Ana, que es la dueña y te trata como si estuvieras en su propia casa. De los sitios que siempre quieres volver.','casa ambiente'],
+ ['Eva Fernández Gascón','hace 3 semanas','Comida casera, canapés variados y riquísimos. Buenísima calidad y servicio. Hay mucho ambiente para aperitivo, tardeo, cenas y copas. ¡Súper recomendable!','canap ambiente'],
+ ['Lucas Guti','hace 2 semanas','Todo buenísimo, volveremos otro día. La comida espectacular, no he probado nada igual. Las camareras muy majas y muy atentas, 10/10.','casa'],
+ ['Ana Gómez Sánchez','hace 2 semanas','La comida súper rica y el sitio muy mono. La atención, un 10: son majísimas y te hacen sentir como en casa. Muy recomendable.','casa'],
+ ['José Luis Escudero','hace 3 semanas','Buen trato y maravillosas tostas. No se puede faltar al jueves de tapas.','tosta ambiente'],
+ ['María José Bro','hace 3 semanas','Un local estupendo en Los Molinos para tomar unas cervecitas o un vinito con unas tostas o su famosa ensaladilla. Altamente recomendable. Sus dueñas hacen que te sientas como en casa.','tosta casa'],
+ ['Angela Perales','hace 3 semanas','El otro día visité el bar y me quedé enamorada de los canapés. Repetiré.','canap'],
+ ['María Juste','hace 3 semanas','Desde que se inauguró, cada vez que voy por Los Molinos me acerco a tomar unas tapas y disfrutar de su ambiente. Todo muy rico y casero.','ambiente'],
+ ['Ann Peartree','hace 3 semanas','Las tostadas muy ricas. Se nota que hay cariño y dedicación.','tosta']
+];
+const COLS=['#e2553b','#4b8a5c','#3a3f8f','#c98a41','#9d2f5c','#2f7f8f'];
+const track=document.getElementById('track');
+R.forEach(([n,w,t,k],i)=>{const a=document.createElement('article');a.className='rv';a.dataset.k=k;a.innerHTML='<div class="rv-top"><span class="av" style="background:'+COLS[i%COLS.length]+'">'+n[0]+'</span><div><strong>'+n+'</strong><small>'+w+'</small></div></div><span class="stars">★★★★★</span><p>'+t+'</p>';track.appendChild(a)});
+document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x===c));const k=c.dataset.k;track.querySelectorAll('.rv').forEach(r=>r.classList.toggle('hide',!!k&&!r.dataset.k.includes(k)));track.scrollTo({left:0,behavior:'smooth'})});
+document.getElementById('rvp').onclick=()=>track.scrollBy({left:-340,behavior:'smooth'});
+document.getElementById('rvn').onclick=()=>track.scrollBy({left:340,behavior:'smooth'});
+
+/* aparición suave */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
